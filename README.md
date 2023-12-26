@@ -1,4 +1,4 @@
-# Swab Numbers between Thai and Arabic Numbers and Swab Thai Police Rank between Compact and Full names
+# "Swab Numbers between Thai and Arabic Numbers" and "Swab Thai Police Rank between Compact and Full names"
 
 ## การใช้งานใน Word
 1. สลับเลข ไทย-อารบิก (เฉพาะข้อความที่ Selected คลุมดำไว้)
