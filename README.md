@@ -1,1 +1,16 @@
 # VBCODE
+
+## ใช้งาน
+1. สลับเลข ไทย-อารบิก
+2. สลับยศตำรวจไทย
+
+
+# หากมีปัญหา
+
+## แสดงผลภาษาไทยไม่ถูกต้อง
+1. ที่หน้าต่าง Macros เลือก Tools > Options > Editor Format > Font: คลิก Dropdown เพื่อเลือก Font ที่มี (Thai) อยู่ด้านหลังครับ เช่น Tahoma (Thai)
+2. เปลี่ยน Region เป็นไทย ไปที่ Control Panel\All Control Panel Items\Region\location\thailand > Apply\OK แล้ว Restart คอมพิวเตอร์
+
+## ไม่ได้ใช้ Microsoft Scripting Runtime library
+เพิ่ม reference "Microsoft Scripting Runtime library"
+ในหน้าต่าง Macros ไปที่ Tools > References > Check "Microsoft Scripting Runtime"
