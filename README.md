@@ -8,7 +8,7 @@
 # หากมีปัญหา
 
 ## แสดงผลภาษาไทยไม่ถูกต้อง
-1. ที่หน้าต่าง Macros เลือก Tools > Options > Editor Format > Font: คลิก Dropdown เพื่อเลือก Font ที่มี (Thai) อยู่ด้านหลังครับ เช่น Tahoma (Thai)
+1. ที่หน้าต่าง Macros เลือก Tools > Options > Editor Format > Font: คลิก Dropdown เพื่อเลือก Font ที่มี (Thai) อยู่ด้านหลัง เช่น Tahoma (Thai)
 2. เปลี่ยน Region เป็นไทย ไปที่ Control Panel\All Control Panel Items\Region\location\thailand > Apply\OK แล้ว Restart คอมพิวเตอร์
 
 ## ไม่ได้ใช้ Microsoft Scripting Runtime library
