@@ -46,6 +46,20 @@ Sub Police_Rank_Full_to_Compact()
     rankDictionary.Add "สิบตำรวจเอก", "ส.ต.อ."
     rankDictionary.Add "สิบตำรวจโท", "ส.ต.ท."
     rankDictionary.Add "สิบตำรวจตรี", "ส.ต.ต."
+    rankDictionary.Add "Police Lance Corporal", "Pol.L/C"
+    rankDictionary.Add "Police Corporal", "Pol.Cpl."
+    rankDictionary.Add "Police Sergeant", "Pol.Sgt."
+    rankDictionary.Add "Police Sergeant Major", "Pol.Sgt.Maj."
+    rankDictionary.Add "Police Senior Sergeant Major", "Pol.Sen.Sgt.Maj."
+    rankDictionary.Add "Police Sub-Lieutenant", "Pol.Sub.Lt."
+    rankDictionary.Add "Police Lieutenant", "Pol.Lt."
+    rankDictionary.Add "Police Captain", "Pol.Capt."
+    rankDictionary.Add "Police Major", "Pol.Maj."
+    rankDictionary.Add "Police Lieutenant Colonel", "Pol.Lt.Col."
+    rankDictionary.Add "Police Colonel", "Pol.Col."
+    rankDictionary.Add "Police Major General", "Pol.Maj.Gen."
+    rankDictionary.Add "Police Lieutenant General", "Pol.Lt.Gen."
+    rankDictionary.Add "Police General", "Pol.Gen."
     
     Dim key As Variant
     
@@ -84,6 +98,20 @@ Sub Police_Rank_Compact_to_Full()
     rankDictionary.Add "สิบตำรวจเอก", "ส.ต.อ."
     rankDictionary.Add "สิบตำรวจโท", "ส.ต.ท."
     rankDictionary.Add "สิบตำรวจตรี", "ส.ต.ต."
+    rankDictionary.Add "Police Lance Corporal", "Pol.L/C"
+    rankDictionary.Add "Police Corporal", "Pol.Cpl."
+    rankDictionary.Add "Police Sergeant", "Pol.Sgt."
+    rankDictionary.Add "Police Sergeant Major", "Pol.Sgt.Maj."
+    rankDictionary.Add "Police Senior Sergeant Major", "Pol.Sen.Sgt.Maj."
+    rankDictionary.Add "Police Sub-Lieutenant", "Pol.Sub.Lt."
+    rankDictionary.Add "Police Lieutenant", "Pol.Lt."
+    rankDictionary.Add "Police Captain", "Pol.Capt."
+    rankDictionary.Add "Police Major", "Pol.Maj."
+    rankDictionary.Add "Police Lieutenant Colonel", "Pol.Lt.Col."
+    rankDictionary.Add "Police Colonel", "Pol.Col."
+    rankDictionary.Add "Police Major General", "Pol.Maj.Gen."
+    rankDictionary.Add "Police Lieutenant General", "Pol.Lt.Gen."
+    rankDictionary.Add "Police General", "Pol.Gen."
     
     Dim key As Variant
     
