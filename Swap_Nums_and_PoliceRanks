@@ -1,0 +1,100 @@
+'เลขอารบิกเป็นไทย (เฉพาะที่ selected คลุมดำ)
+Sub arabic_to_thai()
+    For i = 0 To 9
+        With Selection.Find
+            .text = Chr(48 + i)
+            .Replacement.text = Chr(240 + i)
+            .Wrap = wdFindStop
+            .Execute Replace:=wdReplaceAll
+        End With
+    Next
+End Sub
+
+'เลขไทยเป็นอารบิก (เฉพาะที่ selected คลุมดำ)
+Sub thai_to_arabic()
+    For i = 0 To 9
+        With Selection.Find
+            .text = Chr(240 + i)
+            .Replacement.text = Chr(48 + i)
+            .Wrap = wdFindStop
+            .Execute Replace:=wdReplaceAll
+        End With
+    Next
+End Sub
+
+'ยศตำรวจไทยแบบเต็มเป็นแบบย่อ (เฉพาะที่ selected คลุมดำ)
+Sub Police_Rank_Full_to_Compact()
+    ' Include a reference to the Microsoft Scripting Runtime library:
+    ' Go to Tools > References > Check "Microsoft Scripting Runtime"
+    
+    ' Create a new Scripting.Dictionary to store ranks and their abbreviations
+    Dim rankDictionary As Scripting.Dictionary
+    Set rankDictionary = New Scripting.Dictionary
+
+    ' Add data to the dictionary
+    rankDictionary.Add "พลตำรวจเอก", "พล.ต.อ."
+    rankDictionary.Add "พลตำรวจโท", "พล.ต.ท."
+    rankDictionary.Add "พลตำรวจตรี", "พล.ต.ต."
+    rankDictionary.Add "พันตำรวจเอก", "พ.ต.อ."
+    rankDictionary.Add "พันตำรวจโท", "พ.ต.ท."
+    rankDictionary.Add "พันตำรวจตรี", "พ.ต.ต."
+    rankDictionary.Add "ร้อยตำรวจเอก", "ร.ต.อ."
+    rankDictionary.Add "ร้อยตำรวจโท", "ร.ต.ท."
+    rankDictionary.Add "ร้อยตำรวจตรี", "ร.ต.ต."
+    rankDictionary.Add "ดาบตำรวจ", "ด.ต."
+    rankDictionary.Add "จ่าสิบตำรวจ", "จ.ส.ต."
+    rankDictionary.Add "สิบตำรวจเอก", "ส.ต.อ."
+    rankDictionary.Add "สิบตำรวจโท", "ส.ต.ท."
+    rankDictionary.Add "สิบตำรวจตรี", "ส.ต.ต."
+    
+    Dim key As Variant
+    
+    ' Loop through the dictionary and perform replacements
+    For Each key In rankDictionary.Keys
+        With Selection.Find
+            .text = key
+            .Replacement.text = rankDictionary(key)
+            .Wrap = wdFindStop ' Change the wrap method according to your needs
+            .Execute Replace:=wdReplaceAll
+        End With
+    Next key
+End Sub
+
+'ยศตำรวจไทยแบบย่อเป็นแบบเต็ม (เฉพาะที่ selected คลุมดำ)
+Sub Police_Rank_Compact_to_Full()
+    ' Include a reference to the Microsoft Scripting Runtime library:
+    ' Go to Tools > References > Check "Microsoft Scripting Runtime"
+
+    ' Create a new Scripting.Dictionary to store ranks and their abbreviations
+    Dim rankDictionary As Scripting.Dictionary
+    Set rankDictionary = New Scripting.Dictionary
+
+    ' Add data to the dictionary
+    rankDictionary.Add "พลตำรวจเอก", "พล.ต.อ."
+    rankDictionary.Add "พลตำรวจโท", "พล.ต.ท."
+    rankDictionary.Add "พลตำรวจตรี", "พล.ต.ต."
+    rankDictionary.Add "พันตำรวจเอก", "พ.ต.อ."
+    rankDictionary.Add "พันตำรวจโท", "พ.ต.ท."
+    rankDictionary.Add "พันตำรวจตรี", "พ.ต.ต."
+    rankDictionary.Add "ร้อยตำรวจเอก", "ร.ต.อ."
+    rankDictionary.Add "ร้อยตำรวจโท", "ร.ต.ท."
+    rankDictionary.Add "ร้อยตำรวจตรี", "ร.ต.ต."
+    rankDictionary.Add "ดาบตำรวจ", "ด.ต."
+    rankDictionary.Add "จ่าสิบตำรวจ", "จ.ส.ต."
+    rankDictionary.Add "สิบตำรวจเอก", "ส.ต.อ."
+    rankDictionary.Add "สิบตำรวจโท", "ส.ต.ท."
+    rankDictionary.Add "สิบตำรวจตรี", "ส.ต.ต."
+    
+    Dim key As Variant
+    
+    ' Loop through the dictionary and perform replacements
+    For Each key In rankDictionary.Keys
+        With Selection.Find
+            .text = rankDictionary(key)
+            .Replacement.text = key
+            .Wrap = wdFindStop ' Change the wrap method according to your needs
+            .Execute Replace:=wdReplaceAll
+        End With
+    Next key
+End Sub
+
