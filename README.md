@@ -1,8 +1,8 @@
 # VBCODE
 
-## ใช้งาน
-1. สลับเลข ไทย-อารบิก
-2. สลับยศตำรวจไทย
+## การใช้งานใน Word
+1. สลับเลข ไทย-อารบิก (เฉพาะข้อความที่ Selected คลุมดำไว้)
+2. สลับยศตำรวจไทย (เฉพาะข้อความที่ Selected คลุมดำไว้)
 
 
 # หากมีปัญหา
@@ -12,5 +12,5 @@
 2. เปลี่ยน Region เป็นไทย ไปที่ Control Panel\All Control Panel Items\Region\location\thailand > Apply\OK แล้ว Restart คอมพิวเตอร์
 
 ## ไม่ได้ใช้ Microsoft Scripting Runtime library
-เพิ่ม reference "Microsoft Scripting Runtime library"
+ให้เพิ่ม reference "Microsoft Scripting Runtime library"
 ในหน้าต่าง Macros ไปที่ Tools > References > Check "Microsoft Scripting Runtime"
